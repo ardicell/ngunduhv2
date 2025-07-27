@@ -1,0 +1,6 @@
+name = "social-media-downloader"
+main = "worker.js"
+compatibility_date = "2025-07-27"
+
+[site]
+bucket = "./public"
