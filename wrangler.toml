@@ -6,8 +6,13 @@ compatibility_date = "2025-07-27"
 bucket = "./public"
 
 [build]
-upload.format = "modules"
+upload = { format = "modules" }
 
-[[bindings]]
-type = "static_asset"
-name = "ASSETS"
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+fallthrough = false
+
+[[rules]]
+type = "Text"
+globs = ["**/*.html", "**/*.css", "**/*.txt"]
