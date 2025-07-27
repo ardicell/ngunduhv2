@@ -1,6 +1,13 @@
-name = "social-media-downloader"
+name = "ngunduhv2"
 main = "worker.js"
 compatibility_date = "2025-07-27"
 
 [site]
 bucket = "./public"
+
+[build]
+upload.format = "modules"
+
+[[bindings]]
+type = "static_asset"
+name = "ASSETS"
